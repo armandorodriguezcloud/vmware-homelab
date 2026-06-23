@@ -3,8 +3,8 @@
 ## Hosts
 | Host         | Role            | CPU      | RAM   | Storage          |
 |--------------|-----------------|----------|-------|------------------|
-| esxi01, 03    | ESXi 8.0 nodes  | 8c each  | 64 GB | NVMe (vSAN disk) |
-| vcsa.lab     | vCenter Server  |,        |,     |,                |
+| esxi01-03    | ESXi 8.0 nodes  | 8c each  | 64 GB | NVMe (vSAN disk) |
+| vcsa.lab     | vCenter Server  | n/a      | n/a   | n/a              |
 
 ## Cluster services
 - **HA**, VM restart on host failure; admission control enabled.
