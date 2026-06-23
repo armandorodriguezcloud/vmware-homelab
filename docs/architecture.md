@@ -3,14 +3,14 @@
 ## Hosts
 | Host         | Role            | CPU      | RAM   | Storage          |
 |--------------|-----------------|----------|-------|------------------|
-| esxi01–03    | ESXi 8.0 nodes  | 8c each  | 64 GB | NVMe (vSAN disk) |
-| vcsa.lab     | vCenter Server  | —        | —     | —                |
+| esxi01, 03    | ESXi 8.0 nodes  | 8c each  | 64 GB | NVMe (vSAN disk) |
+| vcsa.lab     | vCenter Server  |,        |,     |,                |
 
 ## Cluster services
-- **HA** — VM restart on host failure; admission control enabled.
-- **DRS** — FullyAutomated load balancing + initial placement.
-- **vMotion** — dedicated VMkernel on VLAN20; live migration tested under load.
-- **vSAN** — 3-node hyperconverged datastore from local NVMe.
+- **HA**, VM restart on host failure; admission control enabled.
+- **DRS**, FullyAutomated load balancing + initial placement.
+- **vMotion**, dedicated VMkernel on VLAN20; live migration tested under load.
+- **vSAN**, 3-node hyperconverged datastore from local NVMe.
 
 ## Networking (distributed switch)
 | Port group   | VLAN | Purpose              |
